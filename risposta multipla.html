@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test sullo Sviluppo Emotivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .feedback {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .correct {
+      color: green;
+    }
+
+    .incorrect {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Test sullo Sviluppo Emotivo</h2>
+
+<form id="emotionalDevelopmentQuiz">
+  <!-- Domanda 1 -->
+  <label for="q1">1. Quale delle seguenti non è considerata un'emozione primaria nei neonati?</label>
+  <input type="radio" name="q1" value="a"> a. Felicità
+  <input type="radio" name="q1" value="b"> b. Curiosità
+  <input type="radio" name="q1" value="c"> c. Rabbia
+  <input type="radio" name="q1" value="d"> d. Tristezza
+  <div class="feedback" id="q1Feedback"></div>
+
+  <!-- Domanda 2 -->
+  <label for="q2">2. Cosa caratterizza il pianto di base dei neonati?</label>
+  <input type="radio" name="q2" value="a"> a. Prolungato e costante
+  <input type="radio" name="q2" value="b"> b. Ciclo ritmico di pianto, breve silenzio, fischio, breve pausa
+  <input type="radio" name="q2" value="c"> c. Singhiozzo intermittente
+  <input type="radio" name="q2" value="d"> d. Pianto improvviso senza pattern
+  <div class="feedback" id="q2Feedback"></div>
+
+  <!-- Domanda 3 -->
+<label for="q3">3. Quando di solito compare la paura dell'estraneo nei bambini?</label>
+<input type="radio" name="q3" value="a"> a. Al momento della nascita
+<input type="radio" name="q3" value="b"> b. Attorno ai 6 mesi
+<input type="radio" name="q3" value="c"> c. Durante la prima infanzia
+<input type="radio" name="q3" value="d"> d. Intorno ai 2 anni
+<div class="feedback" id="q3Feedback"></div>
+
+<!-- Domanda 4 -->
+<label for="q4">4. Cosa caratterizza l'ansia o la protesta da separazione nei bambini?</label>
+<input type="radio" name="q4" value="a"> a. Si verifica durante l'adolescenza
+<input type="radio" name="q4" value="b"> b. Si verifica durante la prima infanzia
+<input type="radio" name="q4" value="c"> c. Si verifica durante l'età prescolare
+<input type="radio" name="q4" value="d"> d. Si verifica durante l'età adulta
+<div class="feedback" id="q4Feedback"></div>
+
+<!-- Domanda 5 -->
+<label for="q5">5. Quando inizia il bambino a esprimere emozioni autoconsapevoli come l'empatia e l'imbarazzo?</label>
+<input type="radio" name="q5" value="a"> a. Al momento della nascita
+<input type="radio" name="q5" value="b"> b. A 6 mesi
+<input type="radio" name="q5" value="c"> c. A 1 anno e mezzo
+<input type="radio" name="q5" value="d"> d. A 3 anni
+<div class="feedback" id="q5Feedback"></div>
+
+<!-- Domanda 6 -->
+<label for="q6">6. Cosa rappresenta il pianto di dolore nei neonati?</label>
+<input type="radio" name="q6" value="a"> a. Pianto costante senza pattern
+<input type="radio" name="q6" value="b"> b. Pianto intermittente seguito da risate
+<input type="radio" name="q6" value="c"> c. Improvviso iniziale lungo pianto seguito dal trattenimento del respiro
+<input type="radio" name="q6" value="d"> d. Pianto lieve senza particolari caratteristiche
+<div class="feedback" id="q6Feedback"></div>
+
+<!-- Domanda 7 -->
+<label for="q7">7. Quale delle seguenti non è un'emozione autoconsapevole valutativa nei bambini?</label>
+<input type="radio" name="q7" value="a"> a. Gioia
+<input type="radio" name="q7" value="b"> b. Tristezza
+<input type="radio" name="q7" value="c"> c. Paura
+<input type="radio" name="q7" value="d"> d. Sorpresa
+<div class="feedback" id="q7Feedback"></div>
+
+<!-- Domanda 8 -->
+<label for="q8">8. Cosa comprende il termine "strange situation" nell'ambito dell'attaccamento?</label>
+<input type="radio" name="q8" value="a"> a. Un periodo di vacanza in un luogo insolito
+<input type="radio" name="q8" value="b"> b. Una tecnica di osservazione dell'interazione madre-figlio
+<input type="radio" name="q8" value="c"> c. Un'esperienza di socializzazione con persone sconosciute
+<input type="radio" name="q8" value="d"> d. Una fase critica dello sviluppo infantile
+<div class="feedback" id="q8Feedback"></div>
+
+<!-- Domanda 9 -->
+<label for="q9">9. Quando si inizia a parlare di "vero e proprio legame di attaccamento" secondo le fasi di sviluppo di Bowlby?</label>
+<input type="radio" name="q9" value="a"> a. Dalla nascita ai 6 mesi
+<input type="radio" name="q9" value="b"> b. Dalla nascita ai 12 mesi
+<input type="radio" name="q9" value="c"> c. Da 7 a 24 mesi
+<input type="radio" name="q9" value="d"> d. Dall'infanzia all'adolescenza
+<div class="feedback" id="q9Feedback"></div>
+
+<!-- Domanda 10 -->
+<label for="q10">10. Cosa sono i Modelli Operativi Interni (IWM) nell'ambito dell'attaccamento?</label>
+<input type="radio" name="q10" value="a"> a. Giochi mentali
+<input type="radio" name="q10" value="b"> b. Strutture mentali affettivo-cognitive
+<input type="radio" name="q10" value="c"> c. Schemi comportamentali innati
+<input type="radio" name="q10" value="d"> d. Modelli di attaccamento esterni
+<div class="feedback" id="q10Feedback"></div>
+
+<!-- Domanda 11 -->
+<label for="q11">11. Quali sono gli stili di attaccamento basati sulla Strange Situation?</label>
+<input type="radio" name="q11" value="a"> a. Sicuro, insicuro evitante, insicuro resistente
+<input type="radio" name="q11" value="b"> b. Affettivo, distante, ambivalente
+<input type="radio" name="q11" value="c"> c. Sociale, introverso, estroverso
+<input type="radio" name="q11" value="d"> d. Primario, secondario, terziario
+<div class="feedback" id="q11Feedback"></div>
+
+<!-- Domanda 12 -->
+<label for="q12">12. Cosa valutano l'Adult Attachment Interview e l'Attachment Story Completion Task?</label>
+<input type="radio" name="q12" value="a"> a. Livello di intelligenza emotiva
+<input type="radio" name="q12" value="b"> b. Stili di attaccamento genitoriale
+<input type="radio" name="q12" value="c"> c. Modelli Operativi Interni (MOI)
+<input type="radio" name="q12" value="d"> d. Comportamenti sociali infantili
+<div class="feedback" id="q12Feedback"></div>
+
+<!-- Domanda 13 -->
+<label for="q13">13. Quando i bambini iniziano a mostrare un aumento nella capacità di riflettere sulle emozioni?</label>
+<input type="radio" name="q13" value="a"> a. Nei primi 3 mesi
+<input type="radio" name="q13" value="b"> b. Tra i 2 e i 4 anni
+<input type="radio" name="q13" value="c"> c. Durante l'adolescenza
+<input type="radio" name="q13" value="d"> d. A partire dai 6 anni
+<div class="feedback" id="q13Feedback"></div>
+
+<!-- Domanda 14 -->
+<label for="q14">14. Cosa caratterizza l'adolescenza in termini di emozioni?</label>
+<input type="radio" name="q14" value="a"> a. Stabilità emotiva
+<input type="radio" name="q14" value="b"> b. Aumento degli alti e bassi emotivi
+<input type="radio" name="q14" value="c"> c. Diminuzione delle emozioni
+<input type="radio" name="q14" value="d"> d. Assenza di emozioni
+<div class="feedback" id="q14Feedback"></div>
+
+<!-- Domanda 15 -->
+<label for="q15">15. Cosa si intende per "coping" nello sviluppo emotivo?</label>
+<input type="radio" name="q15" value="a"> a. Nascondere le emozioni
+<input type="radio" name="q15" value="b"> b. Strategie per affrontare lo stress
+<input type="radio" name="q15" value="c"> c. Esprimere apertamente tutte le emozioni
+<input type="radio" name="q15" value="d"> d. Ignorare lo stress
+<div class="feedback" id="q15Feedback"></div>
+
+<!-- Domanda 16 -->
+<label for="q16">16. Quale delle seguenti affermazioni è vera riguardo al coping durante l'età scolare?</label>
+<input type="radio" name="q16" value="a"> a. Suppressione delle emozioni è la strategia più efficace
+<input type="radio" name="q16" value="b"> b. Esclusivamente dipendente dai genitori
+<input type="radio" name="q16" value="c"> c. Coping è irrilevante durante l'età scolare
+<input type="radio" name="q16" value="d"> d. Uso di strategie autonome per aumentare le reazioni emotive
+<div class="feedback" id="q16Feedback"></div>
+
+<!-- Domanda 17 -->
+<label for="q17">17. Cosa rappresenta l'attaccamento nell'ambito dello sviluppo emotivo?</label>
+<input type="radio" name="q17" value="a"> a. Una breve interazione affettiva
+<input type="radio" name="q17" value="b"> b. Un legame affettivo, intimo, costante e duraturo
+<input type="radio" name="q17" value="c"> c. Una separazione emotiva volontaria
+<input type="radio" name="q17" value="d"> d. Un'esperienza isolata di attaccamento
+<div class="feedback" id="q17Feedback"></div>
+
+<!-- Domanda 18 -->
+<label for="q18">18. Quale teorico sottolinea che i neonati e chi si prende cura di loro sono biologicamente predisposti a sviluppare degli attaccamenti?</label>
+<input type="radio" name="q18" value="a"> a. Sigmund Freud
+<input type="radio" name="q18" value="b"> b. Erik Erikson
+<input type="radio" name="q18" value="c"> c. John Bowlby
+<input type="radio" name="q18" value="d"> d. Lawrence Kohlberg
+<div class="feedback" id="q18Feedback"></div>
+
+<!-- Domanda 19 -->
+<label for="q19">19. Cosa indica la Strange Situation nel contesto dell'attaccamento?</label>
+<input type="radio" name="q19" value="a"> a. Una situazione di isolamento sociale
+<input type="radio" name="q19" value="b"> b. Una tecnica di osservazione dell'interazione madre-figlio
+<input type="radio" name="q19" value="c"> c. Un periodo di transizione nella vita di un bambino
+<input type="radio" name="q19" value="d"> d. Una fase critica dello sviluppo infantile
+<div class="feedback" id="q19Feedback"></div>
+
+<!-- Domanda 20 -->
+<label for="q20">20. Cosa rappresenta la fase 1 nello sviluppo dell'attaccamento secondo le fasi di Bowlby?</label>
+<input type="radio" name="q20" value="a"> a. Dall'infanzia all'adolescenza
+<input type="radio" name="q20" value="b"> b. Dalla nascita ai 2 mesi
+<input type="radio" name="q20" value="c"> c. Dai 2 ai 7 mesi
+<input type="radio" name="q20" value="d"> d. Dalla nascita ai 12 mesi
+<div class="feedback" id="q20Feedback"></div>
+
+<!-- Altre domande... -->
+
+
+  <input type="button" value="Verifica Risposte" onclick="checkAnswers()">
+</form>
+
+<script>
+function checkAnswers() {
+  checkAnswer("q1", "b", "q1Feedback");
+  checkAnswer("q2", "b", "q2Feedback");
+  checkAnswer("q3", "b", "q3Feedback");
+  checkAnswer("q4", "b", "q4Feedback");
+  checkAnswer("q5", "c", "q5Feedback");
+  checkAnswer("q6", "c", "q6Feedback");
+  checkAnswer("q7", "c", "q7Feedback");
+  checkAnswer("q8", "b", "q8Feedback");
+  checkAnswer("q9", "c", "q9Feedback");
+  checkAnswer("q10", "b", "q10Feedback");
+  checkAnswer("q11", "a", "q11Feedback");
+  checkAnswer("q12", "c", "q12Feedback");
+  checkAnswer("q13", "b", "q13Feedback");
+  checkAnswer("q14", "b", "q14Feedback");
+  checkAnswer("q15", "b", "q15Feedback");
+  checkAnswer("q16", "d", "q16Feedback");
+  checkAnswer("q17", "b", "q17Feedback");
+  checkAnswer("q18", "c", "q18Feedback");
+  checkAnswer("q19", "b", "q19Feedback");
+  checkAnswer("q20", "b", "q20Feedback");
+
+  // Aggiungi altre chiamate a checkAnswer() per le restanti domande...
+}
+function checkAnswer(question, correctAnswer, feedbackId) {
+    var userAnswer = document.querySelector('input[name="' + question + '"]:checked');
+    var feedback = document.getElementById(feedbackId);
+
+    if (userAnswer) {
+      if (userAnswer.value === correctAnswer) {
+        feedback.textContent = "Risposta Corretta!";
+        feedback.className = "correct";
+      } else {
+        feedback.textContent = "Risposta Sbagliata. La risposta corretta è: " + correctAnswer.toUpperCase() + ".";
+        feedback.className = "incorrect";
+      }
+    } else {
+      feedback.textContent = "Seleziona una risposta.";
+      feedback.className = "incorrect";
+    }
+  }
+</script>
+
+</body>
+</html>
+   
